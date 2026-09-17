@@ -499,7 +499,7 @@ function App() {
          <img 
             src={link.icon} 
             alt="" 
-            className="w-5 h-5 object-contain" 
+            className="w-8 h-8 object-contain" 
             onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement!.innerText = link.title.charAt(0);
@@ -530,7 +530,7 @@ function App() {
             title={link.description || link.url}
         >
             <div className={`flex items-center gap-3 ${isSimple ? '' : 'mb-1.5'} pr-6`}>
-                <div className={`${isSimple ? 'w-6 h-6 text-xs' : 'w-8 h-8 text-sm'} rounded-lg bg-slate-50 dark:bg-slate-700 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold uppercase shrink-0 overflow-hidden`}>
+                <div className={`${isSimple ? 'w-8 h-8 text-xs' : 'w-10 h-10 text-sm'} rounded-lg bg-slate-50 dark:bg-slate-700 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold uppercase shrink-0 overflow-hidden`}>
                     {iconDisplay}
                 </div>
                 <h3 className="font-medium text-sm text-slate-800 dark:text-slate-200 truncate flex-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
